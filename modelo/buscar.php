@@ -1,7 +1,7 @@
 <?php
-function buscarNombre($email){
+function buscarUsuario($email){
     include 'conexion.php';
-    $query="SELECT nombre, apellidos FROM usuarios WHERE email = '$email'";
+    $query="SELECT * FROM usuarios WHERE email = '$email'";
     $nombre=mysqli_query($conexion,$query);
     $row= $nombre->fetch_assoc();
     return $row;
