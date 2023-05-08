@@ -27,7 +27,7 @@
         <input type="text" placeholder="GAS" name="gas">
         <input type="text" placeholder="AGUA" name="agua">
         <input type="text" placeholder="LUZ" name="luz">
-        <button name="btn1">Actualizarrrrrrrrrr</button>
+        <button name="btn1">Actualizar</button>
     </form>
     <?php
             if (isset($_POST['btn1'])) {
