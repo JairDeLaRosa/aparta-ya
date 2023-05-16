@@ -8,12 +8,13 @@ and !empty($_POST['wifi']) and !empty($_POST['aire_ac']) and !empty($_POST['gas'
     $habitaciones = $_POST['habitaciones'];
     $barrio = $_POST['barrio'];
     $direccion = $_POST['direccion'];
+    $banos = $_POST['banos'];
     $wifi = $_POST['wifi'];
     $aire_ac = $_POST['aire_ac'];
     $gas = $_POST['gas'];
     $agua = $_POST['agua'];
     $luz = $_POST['luz'];
-    $editar = editarP($tipo, $precio, $habitaciones, $barrio, $direccion, $wifi, $aire_ac, $gas, $agua, $luz,$_SESSION ['email']);
+    $editar = editarP($tipo, $precio, $habitaciones, $barrio, $direccion, $banos, $wifi, $aire_ac, $gas, $agua, $luz,$_SESSION ['email']);
     if($registro==true){
     echo '<div>Actualización exitosa</div>';
     }else{

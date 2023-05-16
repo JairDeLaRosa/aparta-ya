@@ -1,5 +1,6 @@
 <?php
 session_start();
+include '../controlador/mostrarUsuario.php';
 if(!isset($_SESSION['email'])){
     header("Location: ../index.php");
     session_destroy();
@@ -36,10 +37,12 @@ if(!isset($_SESSION['email'])){
 
     <div id="columna-izquierda">
         <section id="section-1">
-            <a href="perfil.php"><div id="cabeza-1" >
+            <a href="perfil.php?id=<?php echo $usuarios['idUsuario']?>"><div id="cabeza-1" >
                 <img id="perfil-2" src="img/foto-perfil.jpg" alt="foto-perfil">
                 <p id="nombre"> <?php 
-                include '../controlador/mostrar.php';
+                echo $usuarios['nombre'];
+                echo '<br>';
+                echo $usuarios['apellidos'];
                 ?></p>
             </div></a>
 

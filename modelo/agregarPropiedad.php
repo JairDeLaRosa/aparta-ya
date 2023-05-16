@@ -1,5 +1,5 @@
 <?php
-function agregarPropiedad($tipo, $precio, $habitaciones, $barrio, $direccion, $wifi, $aire_ac, $gas, $agua, $luz, $emailSesion){
+function agregarPropiedad($tipo, $precio, $habitaciones, $barrio, $direccion, $banos, $wifi, $aire_ac, $gas, $agua, $luz, $emailSesion){
 
 include 'conexion.php';
 
@@ -25,8 +25,8 @@ $row2= $consultarIdUsuario->fetch_assoc();
 
 $idusuarios= $row2["idUsuario"];
 
-$query2= "INSERT INTO propiedades(tipo, precio, habitaciones, barrio, direccion, idServicios, idUsuario)
-VALUES('$tipo','$precio','$habitaciones','$barrio','$direccion','$idservicios','$idusuarios')";
+$query2= "INSERT INTO propiedades(tipo, precio, habitaciones, baños, barrio, direccion, idServicios, idUsuario)
+VALUES('$tipo','$precio','$habitaciones','$banos','$barrio','$direccion','$idservicios','$idusuarios')";
 
 $guardarPropiedad = mysqli_query($conexion,$query2);
 

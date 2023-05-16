@@ -7,6 +7,7 @@ include '../modelo/agregarPropiedad.php';
         $tipo = $_POST['tipo'];
         $precio = $_POST['precio'];
         $habitaciones = $_POST['habitaciones'];
+        $banos = $_POST['banos'];
         $barrio = $_POST['barrio'];
         $direccion = $_POST['direccion'];
         $wifi = $_POST['wifi'];
@@ -14,7 +15,7 @@ include '../modelo/agregarPropiedad.php';
         $gas = $_POST['gas'];
         $agua = $_POST['agua'];
         $luz = $_POST['luz'];
-        $agregarPropiedad = agregarPropiedad($tipo, $precio, $habitaciones, $barrio, $direccion, $wifi, $aire_ac, $gas, $agua, $luz,$_SESSION ['email']);
+        $agregarPropiedad = agregarPropiedad($tipo, $precio, $habitaciones, $barrio, $direccion, $banos, $wifi, $aire_ac, $gas, $agua, $luz,$_SESSION ['email']);
         
         if($agregarPropiedad){
             echo '<div>¡Registro realizado exitosamente!</div>';
