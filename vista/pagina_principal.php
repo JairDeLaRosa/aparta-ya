@@ -38,7 +38,7 @@ if(!isset($_SESSION['email'])){
     <div id="columna-izquierda">
         <section id="section-1">
             <a href="perfil.php?id=<?php echo $usuarios['idUsuario']?>"><div id="cabeza-1" >
-                <img id="perfil-2" src="img/foto-perfil.jpg" alt="foto-perfil">
+                <img id="perfil-2" src="img/usuario.jpg" alt="foto-perfil">
                 <p id="nombre"> <?php 
                 echo $usuarios['nombre'];
                 echo '<br>';
@@ -59,15 +59,15 @@ if(!isset($_SESSION['email'])){
                 <p>Propiedades <br> favoritas</p>
             </div>
             <div class="favoritos">
-                <img src="img/las-malvinas.jpg" alt="las-malvinas">
+                <img src="img/usuario.jpg" alt="las-malvinas">
                 <div><p class="titulo">Las malvinas</p><p class="direccion">Cra 20 #20-40</p></div>
             </div>
             <div class="favoritos">
-                <img src="img/los-laureles.jpg" alt="los-laureles">
+                <img src="img/usuario.jpg" alt="los-laureles">
                 <div><p class="titulo">Los laureles</p><p class="direccion">Cra 39 #10-30</p></div>
             </div>
             <div class="favoritos">
-                <img src="img/VillaMarbella.jpg" alt="VillaMarbella">
+                <img src="img/usuario.jpg" alt="VillaMarbella">
                 <div><p class="titulo">Villa marbella</p><p class="direccion">Cra 19 #9-10</p></div>
             </div>
         </section>
@@ -80,34 +80,34 @@ if(!isset($_SESSION['email'])){
                 <p>Notificaciones <br> recientes</p>
             </div>
             <div class="notificaciones">
-                <img class="notificaciones-fotoPerfil" src="img/jose-armando.jpg" alt="jose-armando">
+                <img class="notificaciones-fotoPerfil" src="img/usuario.jpg" alt="jose-armando">
                 <div><p class="nombre">Jose Armando</p><p class="notificacion">Le ha gustado una de tus publicaciones...
                     <img src="img/logo-like-rojo.png" alt="logo-like-rojo"></p>
                     </div>
             </div>
             <div class="notificaciones">
-                <img class="notificaciones-fotoPerfil" src="img/andres-barbosa.jpg" alt="andres-barbosa">
+                <img class="notificaciones-fotoPerfil" src="img/usuario.jpg" alt="andres-barbosa">
                 <div><p class="nombre">Andres Barbosa</p><p class="notificacion">Le ha gustado una de tus publicaciones...
                     <img src="img/logo-like-rojo.png" alt="logo-like-rojo">
                 </p>
                     </div>
             </div>
             <div class="notificaciones">
-                <img class="notificaciones-fotoPerfil" src="img/julia-delrio.jpg" alt="julia-delrio">
+                <img class="notificaciones-fotoPerfil" src="img/usuario.jpg" alt="julia-delrio">
                 <div><p class="nombre">julia Del Rio</p><p class="notificacion">¡Quiere arrendar una de tus pripierdades!
                     <img src="img/logo-notificacionDeArriendo-rojo.png" alt="arrendar">
                 </p>
                     </div>
             </div>
             <div class="notificaciones">
-                <img class="notificaciones-fotoPerfil" src="img/sophia-guzman.jpg" alt="sophia-guzman">
+                <img class="notificaciones-fotoPerfil" src="img/usuario.jpg" alt="sophia-guzman">
                 <div><p class="nombre">Sophia Guzman</p><p class="notificacion">Le ha gustado una de tus publicaciones...
                     <img src="img/logo-like-rojo.png" alt="logo-like-rojo">
                 </p>
                     </div>
             </div>
             <div class="notificaciones">
-                <img class="notificaciones-fotoPerfil" src="img/alberto-florez.jpg" alt="alberto-florez">
+                <img class="notificaciones-fotoPerfil" src="img/usuario.jpg" alt="alberto-florez">
                 <div><p class="nombre">Alberto Florez</p><p class="notificacion">Ha calificado una de tus publicaciones...
                     <img src="img/logo-calificacion-rojo.png" alt="calificacion">
                 </p>

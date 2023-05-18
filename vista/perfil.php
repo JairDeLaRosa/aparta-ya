@@ -13,6 +13,11 @@ include '../controlador/mostrarPropiedad.php';
     echo $usuarios['nombre'];
     echo ' ';
     echo $usuarios['apellidos'];?></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <!-- FONT AWESOEM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
     <a href="modificar.php">modificar</a>
@@ -43,6 +48,14 @@ include '../controlador/mostrarPropiedad.php';
         <p>Gas: <p><?php echo $servicio['gas'];?></p></p>
         <p>Agua: <p><?php echo $servicio['agua'];?></p></p>
         <p>Luz: <p><?php echo $servicio['luz'];?></p></p>
+
+        <div><a href="../controlador/eliminarPropiedad.php?idPropiedad=<?php echo $row1['idpropiedades']?>&idServicio=<?php echo $servicio['idservicios']?>" class="btn btn-secondary">
+                <i class="fas fa-marker"></i>
+              </a>
+              <a href="../controlador/eliminarPropiedad.php?idPropiedad=<?php echo $row1['idpropiedades']?>&idServicio=<?php echo $servicio['idservicios']?>" class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+              </a></div>
+        
     </div>
     <?php
     }
