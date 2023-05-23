@@ -1,6 +1,7 @@
 <?php
 session_start();
 include '../controlador/mostrarUsuario.php';
+include '../controlador/mostrartodasLasPropiedades.php';
 if(!isset($_SESSION['email'])){
     header("Location: ../index.php");
     session_destroy();
@@ -21,12 +22,12 @@ if(!isset($_SESSION['email'])){
 <body>
     <header>
         <nav>
-            <div id="logo"><img src="img/logo.png" alt="logo"></div>
-            <div id="li1"><img src="img/logo-inicio-rojo.png" alt="Inicio"><a href="pagina_principal.php">Inicio</a></div>
-            <div id="li2"><img src="img/logo-chat-azul.png" alt="mensajes"><a href="#">Mensajes</a></div>
-            <div id="li4"><img id="perfil" src="img/foto-perfil.jpg" alt="foto-perfil">
+            <div id="logo"><a href="pagina_principal.php"><img src="img/logo.png" alt="logo"></a></div>
+            <div id="li1"><a href="pagina_principal.php">Inicio</a></div>
+            <div id="li2"><a href="#">Mensajes</a></div>
+            <div id="li4"><img id="perfil" src="img/usuario.jpg" alt="foto-perfil">
             <ul>
-                <li><a href="perfil.php">Ver perfil</a></li>
+                <li><a href="perfil.php?id=<?php echo $usuarios['idUsuario']?>">Ver perfil</a></li>
                 <li><a href="modificar.php">Editar información</a></li>
                 <li><a href="../controlador/cerrarSesion.php">Cerrar sesión</a></li>
             </ul></div>
@@ -122,10 +123,33 @@ if(!isset($_SESSION['email'])){
         <input id="buscar-2" type="button" name="Buscar" value="Buscar">
     </form></div>
     <div id="container-tarjetas">
-        <div class="tarjeta"><div></div></div>
-        <div class="tarjeta"><div></div></div>
-        <div class="tarjeta"><div></div></div>
+    <?php while($row1 = mysqli_fetch_assoc($todasLasPropiedades)){
+        $servicio = buscarServicio($row1['idServicios']);
+    ?>
+        <div class="tarjeta"><img id="tarjeta-imagenPrincipal" src="img/VillaMarbella.jpg" alt="propiedad">
+            <div id="info-carta"><p class="p-tipo">Tipo: <p id="tipo"><?php echo $row1['tipo']; ?></p></p>
+                <p class="p-barrio">Barrio: <p id="barrio"><?php echo $row1['barrio']; ?></p></p>
+                <p class="p-serviciosIncluidos"><b>Servicios Incluidos</b></p>
+                <p class="p-direccion">Dirección: <p id="direccion"><?php echo $row1['direccion']; ?></p></p>
+                <p class="p-habitaciones">Habitaciones: <p id="habitaciones"><?php echo $row1['habitaciones']; ?></p></p>
+                <p class="p-banos">Baños: <p id="banos"><?php echo $row1['baños']; ?></p></p>
+                <h2 class="h2-precio">Precio: <h2 id="precio">$<?php echo $row1['precio']; ?></h2></h2>
+                <p class="p-wifi">Wifi: <p id="wifi"><?php echo $servicio['wifi'];?></p></p>
+                <p class="p-aire">Aire_AC: <p id="aire"><?php echo $servicio['aireAC'];?></p></p>
+                <p class="p-gas">Gas: <p id="gas"><?php echo $servicio['gas'];?></p></p>
+                <p class="p-agua">Agua: <p id="agua"><?php echo $servicio['agua'];?></p></p>
+                <p class="p-luz">Luz: <p id="luz"><?php echo $servicio['luz'];?></p></p>
+                <img class="like" src="img/logo-favorito-rojo.png" alt="like">
+                <img class="comentarios" src="img/logo-comentario-rojo.png" alt="comentarios">
+                <img class="calificacion" src="img/logo-calificacion-rojo.png" alt="calificacion">
+                <a href="#" class="contactarPropietario">Contactar Arrendatario</a>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
     </div>
+    
     
 </body>
 </html>

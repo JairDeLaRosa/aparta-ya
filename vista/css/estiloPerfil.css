@@ -1,0 +1,286 @@
+.container-principal{
+    top: 67px;
+    background-color: #ffff;
+    left: 30px;
+    right: 30px;
+    width: auto;
+    height: 125px;
+    position: absolute;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-principal img{
+    border-radius: 50%;
+    left: 50px;
+    margin-left: 50px;
+}
+.container-principal h2{
+    color: #0065a5;
+    background-color: #ffff;
+    position: absolute;
+    top: 20px;
+    left: 240px;
+}
+.container-principal h4{
+    color: #0065a5;
+    background-color: #ffff;
+    position: absolute;
+    top: 80px;
+    left: 240px;
+}
+.agregarPropiedad{
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    background-color:#0065a5;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.agregarPropiedad:hover, .editarPerfil:hover{
+    transform: scale(1.05);
+}
+.editarPerfil{
+    position: absolute;
+    top: 70px;
+    right: 250px;
+    background-color:#0065a5;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container-BuscarPropiedad{
+    position: absolute;
+    top: 197px;
+    height: 75px;
+    left: 30px;
+    right: 30px;
+    width: auto;
+    background-color: #ffff;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#buscarPropiedad{
+    position: absolute;
+    right: 70px;
+    top: 33%;
+    background: rgba(255, 46, 0, 0.71);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 5px;
+    width: 105px;
+    height: 28px;
+    color: #ffff;
+}
+#buscarPropiedad:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.barrio{
+    position: absolute;
+    right: 240px;
+    top: 33%;
+    background-color: #ffff;
+    width: 125px;
+    height: 28px;
+    background: rgba(217, 217, 217, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 2px;
+    padding: 0 15px;
+    outline: none;
+}
+.tipo{
+    position: absolute;
+    right: 410px;
+    top: 33%;
+    background-color: #ffff;
+    width: 125px;
+    height: 28px;
+    margin-left: 10px;
+    background: rgba(217, 217, 217, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 2px;
+    padding: 0 15px;
+    outline: none;
+}
+.precio{
+    position: absolute;
+    right: 580px;
+    top: 33%;
+    background-color: #ffff;
+    width: 125px;
+    height: 28px;
+    margin-left: 10px;
+    background: rgba(217, 217, 217, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 2px;
+    padding: 0 15px;
+    outline: none;
+}
+.container-BuscarPropiedad h2{
+    position: absolute;
+    color: #666666;
+    left: 90px;
+    top: 30%;
+    background-color: #ffff;
+}
+.container-Propiedades{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 270px;
+    height: auto;
+    left: 30px;
+    right: 30px;
+    width: auto;
+    background-color: #ffff;
+}
+.Propiedad{
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Propiedad img{
+    height: 200px;
+    width: 200px;
+
+    position: absolute;
+}
+.Propiedad p{
+    position: absolute;
+    color: #666666;
+    background-color: #ffffff;
+    font-size: 20px;
+    display: inline-flex;
+    height: 30px;
+    margin-left: 40px;
+}
+.p-tipo{
+    top: 15px;
+    left: 200px;
+
+}
+#tipo{
+    top: 15px;
+    left: 260px;
+}
+.p-barrio{
+    top: 15px;
+    left: 500px;
+}
+#barrio{
+    top: 15px;
+    left: 580px;
+}
+.p-direccion{
+    top: 15px;
+    left: 800px;
+}
+#direccion{
+    top: 15px;
+    left: 915px;
+}
+.p-habitaciones{
+    top: 50px;
+    left: 200px;
+}
+#habitaciones{
+    top: 50px;
+    left: 330px;
+}
+.p-banos{
+    top: 50px;
+    left: 500px;
+}
+#banos{
+    top: 50px;
+    left: 567px;
+}
+.p-wifi{
+    top: 120px;
+    left: 200px;
+}
+#wifi{
+    top: 120px;
+    left: 255px;
+}
+.p-aire{
+    top: 85px;
+    left: 200px;
+}
+#aire{
+    top: 85px;
+    left: 290px;
+}
+.p-gas{
+    top: 85px;
+    left: 500px;
+}
+#gas{
+    top: 85px;
+    left: 545px;
+}
+.p-luz{
+    top: 85px;
+    left: 800px;
+}
+#luz{
+    top: 85px;
+    left: 845px;
+}
+.p-agua{
+    top: 120px;
+    left: 500px;
+}
+#agua{
+    top: 120px;
+    left: 555px;
+}
+.h2-precio{
+    top: 150px;
+    left: 200px;
+    color: #5e5e5e;
+    position: absolute;
+    background-color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    height: 30px;
+    margin-left: 40px;
+}
+#precio{
+    position: absolute;
+    top: 150px;
+    left: 320px;
+    color: #5e5e5e;
+    background-color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    height: 30px;
+    margin-left: 40px;
+}
+.editar{
+    position: absolute;
+    top: 140px;
+    right: 160px;
+    background-color:#0065a5;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.eliminar{
+    position: absolute;
+    top: 140px;
+    right: 50px;
+    background-color:#de0000;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.editar:hover,.eliminar:hover{
+    transform: scale(1.05)
+}
+
+

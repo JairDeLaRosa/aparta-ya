@@ -13,26 +13,6 @@
     <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
-    <form action="agregarPropiedad.php" method="POST">
-        <div></div>
-        <input type="text" placeholder="TIPO" name="tipo">
-        <input type="number" placeholder="PRECIO" name="precio">
-        <input type="text" placeholder="HABITACIONES" name="habitaciones">
-        <input type="text" placeholder="BAÑOS" name="banos">
-        <input type="text" placeholder="BARRIO" name="barrio">
-        <input type="text" placeholder="DIRECCIÓN" name="direccion">
-        <div>Servicios</div>
-        <input type="text" placeholder="WIFI" name="wifi">
-        <input type="text" placeholder="AIRE_AC" name="aire_ac">
-        <input type="text" placeholder="GAS" name="gas">
-        <input type="text" placeholder="AGUA" name="agua">
-        <input type="text" placeholder="LUZ" name="luz">
-        <button name="btn1">Actualizar</button>
-    </form>
-    <?php
-            if (isset($_POST['btn1'])) {
-                include '../controlador/editarPropiedad.php';
-            }
-            ?>
+    recibido
 </body>
 </html>

@@ -20,7 +20,7 @@ nav{
 }
 #logo{
     position: fixed;
-    margin-left: 80px;
+    margin-left: 30px;
     background-color: white;
 }
 #logo img{
@@ -31,16 +31,14 @@ nav{
 #li1{ 
     background-color: #ffff;
     position: fixed;
-    margin-left: 970px;
+    right: 170px; 
     top: 19px;
     width: 95px;
     padding-right: 10px;
     border-right: #DD0000 solid 1px;
 }
 #li1:hover{
-    margin-left: 9px;
     transform: scale(1.05);
-    margin-left: 970px;
 }
 #li1 img{
     background-color: #ffff;
@@ -57,7 +55,7 @@ nav{
 #li2{
     background-color: #ffff;
     position: fixed;
-    margin-left: 1090px;
+    right: 180px;
     top: 19px;
     height: 25px;
     padding-right: 10px;
@@ -65,7 +63,7 @@ nav{
 #li2:hover{
     margin-left: 9px;
     transform: scale(1.05);
-    margin-left: 1090px;
+    margin-left: 82%;
 }
 #li2 img{
     width: 18px;
@@ -88,14 +86,14 @@ nav{
 #li4{
     background-color: #ffff;
     position: fixed;
-    margin-left: 1230px;
+    right: 30px;
     top: 10px;
 }
 #li4:hover{
     margin-left: 9px;
     transform: scale(1.05);
     cursor: pointer;
-    margin-left: 1230px;
+    margin-left: 91%;
 }
 #li4 a{
     background-color: #ffff;
@@ -123,7 +121,6 @@ nav{
 #li4 ul li:hover{
     border:rgba(0, 0, 0, 0.25) solid 1px;
     background-color: rgb(248, 248, 248);
-    margin-left: 9px;
     transform: scale(1.05);
 }
 #li4 ul li a{
@@ -139,7 +136,7 @@ nav{
 }
 #flecha{
     position: fixed;
-    margin-left: 1255px;
+    right: 25px;
     top: 36px;
     width: 20px;
     height: 20px;
@@ -149,7 +146,7 @@ nav{
     background-color: #f5f5f5;
     position: fixed;
     top: 71px;
-    left: 80px;
+    left: 30px;
     height: 92%;
     width: auto;
     overflow: auto;
@@ -300,7 +297,7 @@ nav{
     background-color: #f5f5f5;
     position: fixed;
     top: 71px; 
-    margin-left: 970px;
+    right: 30px;
     height: 92%;
     width: auto;
     overflow: auto;
@@ -354,7 +351,8 @@ nav{
 }
 #buscar{
     position: fixed;
-    left: 340px;
+    left: 48%;
+    transform: translate(-50%);
     top: 71px;
     height: 75px;
     width: 618px;
@@ -380,7 +378,6 @@ nav{
     margin-left: 30px;
     width: 105px;
     height: 28px;
-    margin-left: 30px;
     color: #ffff;
 }
 #buscar-2:hover{
@@ -395,15 +392,204 @@ form{
 }
 #container-tarjetas{
     position: absolute;
-    left: 340px;
+    left: 48%;
+    transform: translate(-50%);
     top: 155px;
     height: auto;
     width: 618px;
 }
 .tarjeta{
+    position: relative;
+    display: flex;
     margin-bottom: 10px;
     width: 618px;
-    height: 800px;
+    height: 830px;
     background-color: #ffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#tarjeta-imagenPrincipal{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    border: 1px solid #999999; /* Borde sólido de 1px de grosor y color gris claro */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+}
+.tarjeta p{
+    position: absolute;
+    color: #666666;
+    background-color: #ffffff;
+    font-size: 20px;
+    display: inline-flex;
+    height: 30px;
+    margin-left: 40px;
+}
+#info-carta{
+    position: absolute;
+    width: 98%;
+    height: 46%;
+    top: 440px;
+    left: 50%;
+  transform: translate(-50%);
+    border: 1px ridge rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+
+}
+.p-tipo{
+    top: 20px;
+    font-weight: bold;
+}
+#tipo{
+    top: 20px;
+    left: 60px;
+    font-weight: bold;
+}
+.p-barrio{
+    top: 20px;
+    left: 260px;
+    font-weight: bold;
+}
+#barrio{
+    top: 20px;
+    left: 340px;
+    font-weight: bold;
+}
+.p-direccion{
+    top: 60px;
+    font-weight: bold;
+}
+#direccion{
+    top: 60px;
+    left: 110px;
+    font-weight: bold;
+}
+.p-habitaciones{
+    top: 100px;
+    left: 11%;
+}
+#habitaciones{
+    top: 100px;
+    left: 32%;
+}
+.p-banos{
+    top: 100px;
+    left: 61%;
+}
+#banos{
+    top: 100px;
+    left: 72%;
+}
+.p-serviciosIncluidos{
+    top: 140px;
+    left: 45%;
+  transform: translate(-50%);
+}
+.p-serviciosIncluidos b{
+    background-color: #ffff;
+}
+.p-wifi{
+    top: 180px;
+    left: 15%;
+}
+#wifi{
+    top: 180px;
+    left: 23%;
+}
+.p-aire{
+    top: 180px;
+    left: 60%;
+}
+#aire{
+    top: 180px;
+    left: 75%;
+}
+.p-gas{
+    top: 220px;
+    left: 20px;
+}
+#gas{
+    top: 220px;
+    left: 70px;
+}
+.p-luz{
+    top: 220px;
+    left: 240px;
+}
+#luz{
+    top: 220px;
+    left: 283px;
+}
+.p-agua{
+    top: 220px;
+    left: 450px;
+}
+#agua{
+    top: 220px;
+    left: 507px;
+}
+.h2-precio{
+    top: 260px;
+    color: #5e5e5e;
+    position: absolute;
+    background-color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    height: 30px;
+    margin-left: 40px;
+}
+#precio{
+    position: absolute;
+    top: 260px;
+    left: 120px;
+    color: #5e5e5e;
+    background-color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    height: 30px;
+    margin-left: 40px;
+}
+.like{
+    width: 30px;
+    height: 30px;
+    background-color: #ffff;
+    position: absolute;
+    top: 325px;
+    left: 50px;
+}
+.comentarios{
+    width: 30px;
+    height: 30px;
+    background-color: #ffff;
+    position: absolute;
+    top: 325px;
+    left: 175px;
+}
+.calificacion{
+    width: 30px;
+    height: 30px;
+    background-color: #ffff;
+    position: absolute;
+    top: 325px;
+    left: 300px;
+}
+.like:hover,.comentarios:hover,.calificacion:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.contactarPropietario{
+    position: absolute;
+    top: 320px;
+    right: 20px;
+    background-color:#0065a5;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contactarPropietario:hover{
+    transform: scale(1.05);
 }

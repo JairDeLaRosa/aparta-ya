@@ -12,4 +12,10 @@ function buscarServicios($idServicio){
     $row= $servicios->fetch_assoc();
     return $row;
 }
+function todasLasPropiedades(){
+    include 'conexion.php';
+    $query="SELECT * FROM propiedades";
+    $propiedades=mysqli_query($conexion,$query);
+    return $propiedades;
+}
 ?>

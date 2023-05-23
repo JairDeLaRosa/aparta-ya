@@ -5,3 +5,4 @@
         $servicio = buscarServicios($idServicio);
         return $servicio;
     }
+    $todasLasPropiedades= todasLasPropiedades();
