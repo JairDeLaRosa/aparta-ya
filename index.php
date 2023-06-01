@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon"  href="vista/img/logo.ico">
   <title>Iniciar Sesion</title>
   <link rel="stylesheet" href="vista/css/style.css">
   <link rel="stylesheet" href="vista/css/form.css">

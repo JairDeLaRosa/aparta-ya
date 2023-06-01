@@ -1,5 +1,4 @@
 <?php
-session_start();
 include '../modelo/agregarPropiedad.php';
 
     if(!empty($_POST['tipo']) and !empty($_POST['precio']) and !empty($_POST['habitaciones']) and !empty($_POST['banos']) and !empty($_POST['barrio']) and !empty($_POST['direccion'])
@@ -15,13 +14,7 @@ include '../modelo/agregarPropiedad.php';
         $gas = $_POST['gas'];
         $agua = $_POST['agua'];
         $luz = $_POST['luz'];
+
         $agregarPropiedad = agregarPropiedad($tipo, $precio, $habitaciones, $barrio, $direccion, $banos, $wifi, $aire_ac, $gas, $agua, $luz,$_SESSION ['email']);
-        
-        if($agregarPropiedad){
-            echo '<div>¡Registro realizado exitosamente!</div>';
-        }else{
-            echo '<div>Algo salió mal</div>';
         }
-    } else{
-        echo '<div>Por favor completar todos los campos</div>';
-    }
+?>

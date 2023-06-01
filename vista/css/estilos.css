@@ -204,7 +204,8 @@ nav{
     background-color: #ffff;
     display: inline-block;
 }
-#propiedad p{
+#propiedad a{
+
     background-color: #ffff;
     display: inline-block;
     font-size: 25px;
@@ -221,6 +222,8 @@ nav{
 }
 #agregar a{
     background-color: #ffff;
+    color: #0065a5;
+
 }
 #agregar:hover,#editar:hover,#eliminar:hover{
     transform: scale(1.05);
@@ -403,23 +406,32 @@ form{
     display: flex;
     margin-bottom: 10px;
     width: 618px;
-    height: 830px;
+    height: 835px;
     background-color: #ffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.tarjeta-cabeza{
+    position: absolute;
+    top: 10px;
+    width: 98%;
+    height: 70px;
+    left: 50%;
+  transform: translate(-50%);
+    background-color: #ffff;
+    border: 1px ridge rgba(0, 0, 0, 0.25);
+}
 #tarjeta-imagenPrincipal{
     height: 400px;
-    width: 400px;
+    width: 450px;
     position: absolute;
     left: 50%;
-    top: 20px;
+    top: 100px;
     transform: translate(-50%);
     border: 1px solid #999999; /* Borde sólido de 1px de grosor y color gris claro */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
 }
 .tarjeta p{
     position: absolute;
-    color: #666666;
     background-color: #ffffff;
     font-size: 20px;
     display: inline-flex;
@@ -429,8 +441,8 @@ form{
 #info-carta{
     position: absolute;
     width: 98%;
-    height: 46%;
-    top: 440px;
+    height: 300px;
+    top: 520px;
     left: 50%;
   transform: translate(-50%);
     border: 1px ridge rgba(0, 0, 0, 0.25);
@@ -441,100 +453,111 @@ form{
 
 }
 .p-tipo{
-    top: 20px;
+    top: 10px;
+    color: #DD0000;
     font-weight: bold;
-}
-#tipo{
-    top: 20px;
-    left: 60px;
-    font-weight: bold;
+    left: 25%;
+  transform: translate(-50%);
+  
 }
 .p-barrio{
-    top: 20px;
+    top: 10px;
     left: 260px;
-    font-weight: bold;
-}
-#barrio{
-    top: 20px;
-    left: 340px;
-    font-weight: bold;
+    
+    left: 55%;
+  transform: translate(-50%);
+  color: #0065a5;
 }
 .p-direccion{
-    top: 60px;
-    font-weight: bold;
-}
-#direccion{
-    top: 60px;
-    left: 110px;
-    font-weight: bold;
+    top: 30px;
+    left: 55%;
+  transform: translate(-50%);
+  color: #0065a5;
 }
 .p-habitaciones{
-    top: 100px;
+    top: 15px;
     left: 11%;
+    color: #DD0000;
 }
 #habitaciones{
-    top: 100px;
+    top: 15px;
     left: 32%;
+    color: #0065a5;
 }
 .p-banos{
-    top: 100px;
+    top: 15px;
     left: 61%;
+    color: #DD0000;
 }
 #banos{
-    top: 100px;
+    top: 15px;
     left: 72%;
+    color: #0065a5;
 }
 .p-serviciosIncluidos{
-    top: 140px;
+    top: 55px;
     left: 45%;
   transform: translate(-50%);
+  font-size: 25px;
 }
 .p-serviciosIncluidos b{
     background-color: #ffff;
+    color:#0065a5;
+    font-size: 25px;
 }
 .p-wifi{
-    top: 180px;
-    left: 15%;
+    top: 95px;
+    left: 11%;
+    color: #DD0000;
 }
 #wifi{
-    top: 180px;
-    left: 23%;
+    top: 95px;
+    left: 20%;
+    color: #0065a5;
 }
 .p-aire{
-    top: 180px;
-    left: 60%;
+    top: 95px;
+    left: 61%;
+    color: #DD0000;
 }
 #aire{
-    top: 180px;
-    left: 75%;
+    top: 95px;
+    left: 75.5%;
+    color: #0065a5;
 }
 .p-gas{
-    top: 220px;
+    top: 135px;
     left: 20px;
+    color: #DD0000;
 }
 #gas{
-    top: 220px;
+    top: 135px;
     left: 70px;
+    color: #0065a5;
 }
 .p-luz{
-    top: 220px;
+    top: 135px;
     left: 240px;
+    color: #DD0000;
 }
 #luz{
-    top: 220px;
+    top: 135px;
     left: 283px;
+    color: #0065a5;
 }
 .p-agua{
-    top: 220px;
+    top: 135px;
     left: 450px;
+    color: #DD0000;
 }
 #agua{
-    top: 220px;
+    top: 135px;
     left: 507px;
+    color: #0065a5;
 }
 .h2-precio{
-    top: 260px;
-    color: #5e5e5e;
+    top: 180px;
+    color: #DD0000;
     position: absolute;
     background-color: #ffffff;
     font-size: 30px;
@@ -544,9 +567,9 @@ form{
 }
 #precio{
     position: absolute;
-    top: 260px;
+    top: 180px;
     left: 120px;
-    color: #5e5e5e;
+    color: #0065a5;
     background-color: #ffffff;
     font-size: 30px;
     display: inline-flex;
@@ -558,7 +581,7 @@ form{
     height: 30px;
     background-color: #ffff;
     position: absolute;
-    top: 325px;
+    top: 235px;
     left: 50px;
 }
 .comentarios{
@@ -566,7 +589,7 @@ form{
     height: 30px;
     background-color: #ffff;
     position: absolute;
-    top: 325px;
+    top: 235px;
     left: 175px;
 }
 .calificacion{
@@ -574,7 +597,7 @@ form{
     height: 30px;
     background-color: #ffff;
     position: absolute;
-    top: 325px;
+    top: 235px;
     left: 300px;
 }
 .like:hover,.comentarios:hover,.calificacion:hover{
@@ -583,7 +606,7 @@ form{
 }
 .contactarPropietario{
     position: absolute;
-    top: 320px;
+    top: 230px;
     right: 20px;
     background-color:#0065a5;
     color: #ffff;

@@ -9,6 +9,7 @@ include '../controlador/mostrarPropiedad.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="img/logo.ico">
     <title><?php 
     echo $usuarios['nombre'];
     echo ' ';
@@ -40,7 +41,7 @@ include '../controlador/mostrarPropiedad.php';
         echo $usuarios['nombre'];
         echo ' ';
         echo $usuarios['apellidos'];?></h2>
-        <h4 class="numeroDePropiedades">2 propiedades</h4>
+        <h4 class="numeroDePropiedades">propiedades <h4 id="numeroDePropiedades"><?php echo $propiedades->num_rows;?></h4></h4>
         <a class="agregarPropiedad" href="agregarPropiedad.php">Agregar Propiedad</a>
         <a class="editarPerfil" href="modificar.php">Editar Perfil</a>
     </div>
@@ -57,17 +58,17 @@ include '../controlador/mostrarPropiedad.php';
     ?>
     <div class="Propiedad">
             <img src="img/VillaMarbella.jpg" alt="propiedad">
-                <p class="p-tipo">Tipo: <p id="tipo"><?php echo $row1['tipo']; ?></p></p>
-                <p class="p-barrio">Barrio: <p id="barrio"><?php echo $row1['barrio']; ?></p></p>
-                <p class="p-direccion">Dirección: <p id="direccion"><?php echo $row1['direccion']; ?></p></p>
-                <p class="p-habitaciones">Habitaciones: <p id="habitaciones"><?php echo $row1['habitaciones']; ?></p></p>
-                <p class="p-banos">Baños: <p id="banos"><?php echo $row1['baños']; ?></p></p>
-                <h2 class="h2-precio">Precio: <h2 id="precio">$<?php echo $row1['precio']; ?></h2></h2>
-                <p class="p-wifi">Wifi: <p id="wifi"><?php echo $servicio['wifi'];?></p></p>
-                <p class="p-aire">Aire_AC: <p id="aire"><?php echo $servicio['aireAC'];?></p></p>
-                <p class="p-gas">Gas: <p id="gas"><?php echo $servicio['gas'];?></p></p>
-                <p class="p-agua">Agua: <p id="agua"><?php echo $servicio['agua'];?></p></p>
-                <p class="p-luz">Luz: <p id="luz"><?php echo $servicio['luz'];?></p></p>
+                <p class="p-tipoP">Tipo: <p id="tipoP"><?php echo $row1['tipo']; ?></p></p>
+                <p class="p-barrioP">Barrio: <p id="barrioP"><?php echo $row1['barrio']; ?></p></p>
+                <p class="p-direccionP">Dirección: <p id="direccionP"><?php echo $row1['direccion']; ?></p></p>
+                <p class="p-habitacionesP">Habitaciones: <p id="habitacionesP"><?php echo $row1['habitaciones']; ?></p></p>
+                <p class="p-banosP">Baños: <p id="banosP"><?php echo $row1['baños']; ?></p></p>
+                <h2 class="h2-precioP">Precio: <h2 id="precioP">$<?php echo $row1['precio']; ?></h2></h2>
+                <p class="p-wifiP">Wifi: <p id="wifiP"><?php echo $servicio['wifi'];?></p></p>
+                <p class="p-aireP">Aire_AC: <p id="aireP"><?php echo $servicio['aireAC'];?></p></p>
+                <p class="p-gasP">Gas: <p id="gasP"><?php echo $servicio['gas'];?></p></p>
+                <p class="p-aguaP">Agua: <p id="aguaP"><?php echo $servicio['agua'];?></p></p>
+                <p class="p-luzP">Luz: <p id="luzP"><?php echo $servicio['luz'];?></p></p>
               
                 <a class="editar" href="editarPropiedad.php?idPropiedad=<?php echo $row1['idpropiedades']?>&idServicio=<?php echo $servicio['idservicios']?>">
                     Editar</a>

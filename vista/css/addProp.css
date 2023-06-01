@@ -1,0 +1,27 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+form{
+  width: 100%;
+}
+.form{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  place-content: center;
+}
+.form__button{
+  width: 100%;
+}
+.container--form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gets{
+  visibility: hidden;
+  display: none;
+}

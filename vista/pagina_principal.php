@@ -14,6 +14,7 @@ if(!isset($_SESSION['email'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="img/logo.ico">
     <title>ApartaYa</title>
     <link rel="stylesheet" type='text/css' media='screen' href="css/estilos.css">
     <script src="js/jquery-3.6.4.min.js"></script>
@@ -126,11 +127,14 @@ if(!isset($_SESSION['email'])){
     <?php while($row1 = mysqli_fetch_assoc($todasLasPropiedades)){
         $servicio = buscarServicio($row1['idServicios']);
     ?>
-        <div class="tarjeta"><img id="tarjeta-imagenPrincipal" src="img/VillaMarbella.jpg" alt="propiedad">
-            <div id="info-carta"><p class="p-tipo">Tipo: <p id="tipo"><?php echo $row1['tipo']; ?></p></p>
-                <p class="p-barrio">Barrio: <p id="barrio"><?php echo $row1['barrio']; ?></p></p>
+        <div class="tarjeta">
+            <div class="tarjeta-cabeza">
+        <p class="p-barrio"><?php echo $row1['barrio']; ?></p>
+        <p class="p-tipo"><?php echo $row1['tipo']; ?></p>
+        <p class="p-direccion"><?php echo $row1['direccion']; ?></p></div>
+            <img id="tarjeta-imagenPrincipal" src="img/VillaMarbella.jpg" alt="propiedad">
+            <div id="info-carta">
                 <p class="p-serviciosIncluidos"><b>Servicios Incluidos</b></p>
-                <p class="p-direccion">Dirección: <p id="direccion"><?php echo $row1['direccion']; ?></p></p>
                 <p class="p-habitaciones">Habitaciones: <p id="habitaciones"><?php echo $row1['habitaciones']; ?></p></p>
                 <p class="p-banos">Baños: <p id="banos"><?php echo $row1['baños']; ?></p></p>
                 <h2 class="h2-precio">Precio: <h2 id="precio">$<?php echo $row1['precio']; ?></h2></h2>

@@ -158,88 +158,87 @@
     height: 30px;
     margin-left: 40px;
 }
-.p-tipo{
+.p-tipoP{
     top: 15px;
     left: 200px;
-
 }
-#tipo{
+#tipoP{
     top: 15px;
     left: 260px;
 }
-.p-barrio{
+.p-barrioP{
     top: 15px;
     left: 500px;
 }
-#barrio{
+#barrioP{
     top: 15px;
     left: 580px;
 }
-.p-direccion{
+.p-direccionP{
     top: 15px;
     left: 800px;
 }
-#direccion{
+#direccionP{
     top: 15px;
     left: 915px;
 }
-.p-habitaciones{
+.p-habitacionesP{
     top: 50px;
     left: 200px;
 }
-#habitaciones{
+#habitacionesP{
     top: 50px;
     left: 330px;
 }
-.p-banos{
+.p-banosP{
     top: 50px;
     left: 500px;
 }
-#banos{
+#banosP{
     top: 50px;
     left: 567px;
 }
-.p-wifi{
+.p-wifiP{
     top: 120px;
     left: 200px;
 }
-#wifi{
+#wifiP{
     top: 120px;
     left: 255px;
 }
-.p-aire{
+.p-aireP{
     top: 85px;
     left: 200px;
 }
-#aire{
+#aireP{
     top: 85px;
     left: 290px;
 }
-.p-gas{
+.p-gasP{
     top: 85px;
     left: 500px;
 }
-#gas{
+#gasP{
     top: 85px;
     left: 545px;
 }
-.p-luz{
+.p-luzP{
     top: 85px;
     left: 800px;
 }
-#luz{
+#luzP{
     top: 85px;
     left: 845px;
 }
-.p-agua{
+.p-aguaP{
     top: 120px;
     left: 500px;
 }
-#agua{
+#aguaP{
     top: 120px;
     left: 555px;
 }
-.h2-precio{
+.h2-precioP{
     top: 150px;
     left: 200px;
     color: #5e5e5e;
@@ -250,7 +249,7 @@
     height: 30px;
     margin-left: 40px;
 }
-#precio{
+#precioP{
     position: absolute;
     top: 150px;
     left: 320px;
@@ -281,6 +280,9 @@
 }
 .editar:hover,.eliminar:hover{
     transform: scale(1.05)
+}
+#numeroDePropiedades{
+    left: 355px;
 }
 
 
